@@ -1,0 +1,224 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*CSS Variable*/
+:root{
+    --navbar-height:59px;
+}
+/* Navigation Bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+}
+/* Logo and image styling */
+#logo{
+    margin: 10px 10px;
+}
+#logo img{
+    height: 130px;
+}
+/* list styling */
+#navbar{
+    position: absolute;
+    top: 0%;
+}
+#navbar ul{
+    display: flex;
+    font-family:'Baloo Bhai 2';
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: medium;
+}
+
+#navbar ul li a{
+    color: rgb(0, 0, 0);
+    display: block;
+    font-size: larger;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: rgb(12, 11, 11);
+    background-color:rgb(155, 148, 148);
+}
+/* SECTION */
+#eat{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 660px;
+
+    justify-content: center;
+    align-items: center;
+}
+#eat::before{
+    content: "";
+    position: absolute;
+    background: url('../img/background\ 1.jpg') no-repeat center center/cover;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+}
+#eat h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+#eat p{
+    color: rgb(12, 5, 5);
+    font-size: 1.5rem;
+    font-family:'Bree Serif', serif; 
+}
+/* STYLING CLASS */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid ;
+    background-color: rgb(194, 14, 14);
+    color: bisque;
+    font-size:larger;
+    margin: 17px;
+    border-radius: 20px;
+    cursor: pointer;      
+}
+/* Service Section*/
+#help{
+    margin: 1px;
+    display: flex;
+}
+.box{
+    border: 2px solid black;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.904);
+    margin: 25px 6px;
+    padding: 3px;
+
+}
+.box img{
+    height: 165px;
+    display: block;
+    padding: 24px;
+    margin: auto;
+}
+.primary{
+    font-size: 40px;
+    text-align: center;
+    padding: 30px;
+    font-family:'Bree Serif', serif; 
+}
+.cont-primary{
+    padding: 35px;
+    font-size: 30px;
+    font-family:'Bree Serif', serif;
+    text-align: center; 
+}
+.center{
+    font-family:'Bree Serif', serif; 
+    text-align: center;
+}
+/* Sponsers */
+#sponsers{
+    position: relative;
+    height: 344px;
+
+}
+#sponsers::before{
+    content: "";
+    position: absolute;
+    background: url('../img/back\ spon2.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#spon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#spon img{
+    height: 114px;
+}
+.spon-img{
+    padding: 36px;
+}
+.sponser{
+    font-size: 45px;
+    text-align: center;
+    padding: 30px;
+}
+/* Contact Section*/
+#contact{
+    position: relative;
+
+}
+#contact{
+    content: "";
+    position: center;
+    background: url('../img/con3.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+.helpline{
+    font-size: 50px;
+    text-align: center;
+    padding: 70px;
+}
+.form{
+    font-size: 27px;
+    font-family:'Bree Serif', serif; 
+
+    color: rgb(15, 15, 15);
+}
+footer{
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    padding: 9px 20px;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 74px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+#contact-box form{
+    width: 40%;
+
+}
+.message{
+    font-size: 27px;
+    font-family:'Bree Serif', serif; 
+color: black;
+}
